@@ -1,4 +1,4 @@
-## ProxyParser 
+## :globe_with_meridians: ProxyParser 
 ### Особенности
 
 - Для использования просто запустите proxy.py. 
