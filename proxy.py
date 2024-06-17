@@ -44,7 +44,7 @@ proxies = []
 def parseProxy():
     global proxies 
     
-    print("Получения прокси...")
+    print("Obtaining Proxies...")
 
     for url in proxy_sources:
         try:
@@ -58,27 +58,27 @@ def parseProxy():
                     clean_proxy = proxy.split(':')[0:2]
                     clean_proxy = ":".join(clean_proxy)
                     proxies.append(clean_proxy)
-            print(f"Успешно получены прокси из {url}")
+            print(f"Successfully received proxies from {url}")
                     
         except Exception as e:
-            print(f"Ошибка получения прокси из {url}: {e}")
+            print(f"Error getting a proxy from {url}: {e}")
             continue
     
-    # Удаления дубликатов
+    # Removing duplicates
     proxies = list(set(proxies))
     proxies.sort(key=lambda x: tuple(map(int, x.split(':')[0].split('.'))))
     
-    # Сохранения прокси в файл
+    # Saving the proxy to a file
     proxy_file = os.path.join("proxy.txt")
     with open(proxy_file, "w") as file:
         file.write("\n".join(proxies))
-        print(f"Прокси были сохранены в файл {proxy_file}.")
+        print(f"The proxies have been saved to a file {proxy_file}.")
     
 def getCount():
     return len(proxies)
 
-# Использование 
+# Usage
 if __name__ == "__main__":
     parseProxy()
-    print(f"Количество прокси: {getCount()}")
-    print(f"Прокси были успешно получены и сохранены в файл!")
+    print(f"Number of proxies: {getCount()}")
+    print(f"The proxies were successfully received and saved to a file!")
