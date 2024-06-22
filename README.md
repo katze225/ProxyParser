@@ -5,7 +5,7 @@
 - Can be easily integrated into your applications.
 - Easy and simple to understand.
 
-### Использование
+### Usage
 `python proxy.py`
 
 
