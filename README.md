@@ -9,4 +9,4 @@
 `python proxy.py`
 
 
-##### :ghost: [by t1k777](https://github.com/katze225 "by Katze")
+##### :ghost: [by Katze](https://github.com/katze225 "by Katze")
