@@ -44,7 +44,7 @@ proxies = []
 def parseProxy():
     global proxies 
     
-    print("Obtaining Proxies...")
+    print("Search Proxies...")
 
     for url in proxy_sources:
         try:
@@ -61,10 +61,9 @@ def parseProxy():
             print(f"Successfully received proxies from {url}")
                     
         except Exception as e:
-            print(f"Error getting a proxy from {url}: {e}")
+            print(f"Error at {url}: {e}")
             continue
     
-    # Removing duplicates
     proxies = list(set(proxies))
     proxies.sort(key=lambda x: tuple(map(int, x.split(':')[0].split('.'))))
     
@@ -80,5 +79,5 @@ def getCount():
 # Usage
 if __name__ == "__main__":
     parseProxy()
-    print(f"Number of proxies: {getCount()}")
-    print(f"The proxies were successfully received and saved to a file!")
+    print(f"Proxy count: {getCount()}")
+    print(f"Proxies successfully saved to proxy.txt!")
