@@ -3,7 +3,7 @@
 
 - Easy to use
 - Easy to understand
-- Easy to integrate into app.
+- Easy to integrate into app
 
 ### Usage
 `python proxy.py`
