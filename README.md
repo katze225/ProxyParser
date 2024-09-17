@@ -1,9 +1,9 @@
 ## :globe_with_meridians: ProxyParser 
 ### Features
 
-- Easy to use.
-- Can be easily integrated into your applications.
-- Easy and simple to understand.
+- Easy to use
+- Easily integrates into your apps
+- Easy to understand
 
 ### Usage
 `python proxy.py`
