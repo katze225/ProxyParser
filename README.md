@@ -2,8 +2,8 @@
 ### Features
 
 - Easy to use
-- Easily integrates into your apps
 - Easy to understand
+- Easy to integrate into app.
 
 ### Usage
 `python proxy.py`
